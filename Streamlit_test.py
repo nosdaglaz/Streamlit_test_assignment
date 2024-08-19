@@ -36,7 +36,7 @@ for ticker in tickers_list_full:
     json_data = json.loads(data)
     df_dict[ticker] = pd.DataFrame(json_data['data'])
 
-show_halts = st.checkbox('Only containing traiding halts')
+show_halts = st.checkbox('Only containing trading halts')
 
 tickers_list = trading_halt_tickers if show_halts else tickers_list_full
     
