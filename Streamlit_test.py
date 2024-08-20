@@ -19,7 +19,6 @@ tickers_list_full = [
     'NRZ'
 ]
 
-@st.cache_data
 def get_announcement(ticker):
     with open(ticker+'.json', 'r') as file:
         json_string = file.read()
